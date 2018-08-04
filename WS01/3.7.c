@@ -26,6 +26,11 @@ int main(int argc, char *argv[])
     char scale = '\0';
 
     printf("Please enter a measurement to convert: ");
+    /* This is error checking, and a good habit to get into.
+     * HOWEVER: It's been brought to my attention that this will never execute.
+     * This is because the %c is looking for any character, including a '\n'.
+     * Be aware of this side affect, and have a plan around it.
+     */
     if(scanf("%lf%c", &sfrom, &scale) != 2) {
         printf("Please enter measurements as follows: 212F\n");
         // Return 1 to the kernel - implies something wasn't right.
@@ -67,6 +72,9 @@ int main(int argc, char *argv[])
             sfrom, sto);
         return 1;
 
+    /* This executes if all else fails, ie if "scale" isn't valid.
+     * ALWAYS have some kind of 'else' as a failsafe.
+     */
     } else {
         printf("Please enter measurements as follows: 212F\n");
     }
