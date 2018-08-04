@@ -12,6 +12,10 @@
 
 
 // Constant Definitions
+/* Take a note of the solution in 2.7, using (9.0/5.0)
+ * and vice-versa isn't the optimal solution, but it lets me
+ * show you how '#define' works in this context.
+ */
 #define cel2farfact (9.0/5.0)
 #define far2celfact (5.0/9.0)
 #define tempoffset 32
@@ -33,44 +37,38 @@ int main(int argc, char *argv[])
      */
     if(scanf("%lf%c", &sfrom, &scale) != 2) {
         printf("Please enter measurements as follows: 212F\n");
-        // Return 1 to the kernel - implies something wasn't right.
-        return 1;
+        // Returns 1 to the kernel - implies something wasn't right.
+        exit(EXIT_FAILURE);
 
     } else if(scale == 'F') {
         sto = ((sfrom - tempoffset) * far2celfact);
         printf("The temperature %.1fF converts to %.1fC \n",
             sfrom, sto);
-        return 1;
 
     } else if(scale == 'C') {
         sto = ((sfrom * cel2farfact) + tempoffset);
         printf("The temperature %.1fC converts to %.1fF \n",
             sfrom, sto);
-        return 1;
 
     } else if(scale == 'M') {
         sto = sfrom * distfact;
         printf("The distance %.3f miles converts to %.3f kilometers \n",
                 sfrom, sto);
-        return 1;
 
     } else if(scale == 'K') {
         sto = (sfrom / distfact);
         printf("The distance %.3f kilometers converts to %.3f miles \n",
                 sfrom, sto);
-        return 1;
 
     } else if(scale == 'P') {
         sto = (sfrom  * massfact);
         printf("The mass %.3f pounds converts to %.0f grammes \n",
             sfrom, sto);
-        return 1;
 
     } else if(scale == 'G') {
         sto = (sfrom / massfact);
         printf("The mass %.3f grammes converts to %.3f pounds \n",
             sfrom, sto);
-        return 1;
 
     /* This executes if all else fails, ie if "scale" isn't valid.
      * ALWAYS have some kind of 'else' as a failsafe.
