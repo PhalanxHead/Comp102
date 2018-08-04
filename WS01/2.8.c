@@ -22,7 +22,9 @@ main(int argc, char* argv[]) {
     // Error checking - Do we have the right number of inputs?
     if(scanf("%lf", &degFar) != 1) {
         printf("Error! %s\n", ERROR_MSG);
-        exit(0);
+        /* 'exit()' closes the program, EXIT_FAILURE indicates there was an error.
+         */
+        exit(EXIT_FAILURE);
     }
 
     /* Do the Maths
