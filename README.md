@@ -9,3 +9,4 @@ Please note these are my own solutions to the exercises, not Alistair's. Your mi
 - 04/08/2018 - Workshop 1 solutions released
 - 09/08/2018 - Workshop 2 solutions and Extra Material Solutions released
 - 12/08/2018 - Workshop 3 Questions released. No extra material just yet.
+- 18/08/2018 - Answers for Workshop 3 Questions released.
