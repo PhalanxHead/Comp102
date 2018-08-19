@@ -10,3 +10,6 @@ Please note these are my own solutions to the exercises, not Alistair's. Your mi
 - 09/08/2018 - Workshop 2 solutions and Extra Material Solutions released
 - 12/08/2018 - Workshop 3 Questions released. No extra material just yet.
 - 18/08/2018 - Answers for Workshop 3 Questions released.
+- 19/08/2018 - Workshop 4 Questions released and extra study material before the Mid Semester test.
+
+Make sure you do the sample MST before you do the real thing!!
