@@ -116,3 +116,29 @@ Value	Freq
 ```
 
 There are two quite different algorithms for this problem. Can you identify both of them? One of them imposes an upper limit on the input values, so is less general than the other. Does it have any compensating advantages?
+
+
+
+
+
+## Q7.4 Easy
+
+```
+Say, I have a sorted array (of integers), let them write a function to output the frequencies of each number.
+
+e.g. 
+     int A[10] = {1,1,1,2,2,3,3,3,4,5};
+     int A_len = 10;
+     print_freq(A, n);
+
+Output:
+
+Num   Freq
+  1      3
+  2      2
+  3      3
+  4      1
+  5      1
+
+```
+

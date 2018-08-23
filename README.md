@@ -13,3 +13,5 @@ Please note these are my own solutions to the exercises, not Alistair's. Your mi
 - 19/08/2018 - Workshop 4 Questions released and extra study material before the Mid Semester test.
 
 Make sure you do the sample MST before you do the real thing!!
+
+- 23/08/2018 - Workshop 4 Answers released.
