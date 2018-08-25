@@ -1,32 +1,3 @@
-# Workshop 05 Questions
-
-Helpful Resource for working with time complexity from code: 
-https://codility.com/media/train/1-TimeComplexity.pdf
-
-## Exercise 7.12 (Palindromes)
-
-Write a function `int is_palindrome(char*)` that returns True if its argument string is a palindrome, that is, it reads exactly the same forwards as it does backwards. It should return False if the string is not a palindrome.
-
-For example "rats live on no evil star" is a palindrome according to this definition, while "A man, a plan, a canal, Panama!" is not. (Note, the second one is if you allow for whitespace, case and punctuation to be ignored. We are not going to ignore them.)
-
-## Exercise 7.14 (atoi)
-
-Write the function `int atoi(char*)` that converts a character string into an integer value.
-
-## Exercise 7.15 (Anagrams) 
-
-Write a function `int is_anagram(char*, char*)` that returns True if its two arguments are an anagram pair, and false if they're not. An anagram pair must have exactly the same set of letters, with the same frequency for each letter, but a different order.
-For Example "lustre", "result", "ulster" and "rustle" are all anagrams with respect to each other.
-
-More fun can be had if you include spaces in the set. Try the page at
- www.wordsmith.org/anagram/ 
-And you'll find that "Programming is Fun" can be transformed into both "prof margin musing" and "manuring from pigs"
-
-## Exercise 7.16 (Frequency counting for words)  
-
-Modify the following program so that the frequency of each distinct word is listed too. The program is available in Ex7.16Qn.c for easier editing.
-
-```C
 /*
  * Figures 7.13 and 7.14 from 'Programming, Problem Solving
  * & Abstraction in C' by Alistair Moffat, 2013, pg 121,122.
@@ -107,5 +78,3 @@ getword(char W[], int limit)
     W[len] = '\0';
     return 0;
 }
-```
-
