@@ -210,7 +210,9 @@ fib2(int n) {
 ```
 
 ### Answer
+
 (You'll want to view this using Typora or copy it into some kind of TeX parser or MS Word Equation, github won't render it properly for some reason.)
+
 Fib1 has efficiency of $O(2^n)$
 Proof:
 $$
