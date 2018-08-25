@@ -210,7 +210,7 @@ fib2(int n) {
 ```
 
 ### Answer
-
+(You'll want to view this using Typora or copy it into some kind of TeX parser or MS Word Equation, github won't render it properly for some reason.)
 Fib1 has efficiency of $O(2^n)$
 Proof:
 $$
@@ -288,21 +288,31 @@ printf("The longest descending run begins at A[%d] with length %d\n", index, len
 void
 long_desc(int A[], int A_len,int *index, int *length) {
     int i;
+    /* Holds the length of the current run */
     int longest = 1;
+    /* Holds the length of the longest run */
     int maxlen = 1;
+    /* Holds the starting index of the current run */
     int indexer = 0;
+    
     for (i = 1; i < A_len; i++) {
+    	/* If left < right, the descending run has ended */
         if (A[i-1] < A[i]) {
+	    	/* If this run is longer than the current maximum,
+			   override the current maximum. Otherwise do nothing */
             if (longest > maxlen) {
 				*length = longest;
 				maxlen = longest;
 				*index = indexer;
             } else {
+				/* This line is a little redundant to be honest. */
 				*length = maxlen;
             }
+			/* Irrespective of the length of the last run, reset the values */
             indexer = i;
             longest = 1;
         } else {
+			/* If right > left, the run continues. */
         	longest++;    
         }
     }
