@@ -211,21 +211,8 @@ fib2(int n) {
 
 ### Answer
 
-(You'll want to view this using Typora or copy it into some kind of TeX parser or MS Word Equation, github won't render it properly for some reason.)
+![Fib1Proof](C:\Users\lhedt\OneDrive\Uni2018\Comp102\Additional Material\Fib1Proof.PNG)
 
-Fib1 has efficiency of $O(2^n)$
-Proof:
-$$
-T(n \leq 1) = O(1)
-\\
-T(n) = T(n-1) + T(n-2) + O(1)\\
-\text{Assume:}\hspace{2em}
-T(n-1) = O(2^{n-1})\\
-\therefore T(n) = T(n-1) + T(n-2) + O(1)\\
-\text{which is equal to}\hspace{2em}
-T(n) = O(2^{n-1}) + O(2^{n-2}) + O(1) \\
-T(n)= O(2^{n})
-$$
 In words: Each recursive call starts 2 new recursive calls. This creates 2 new problems for every n calls of fib1. Therefore we have $O(2^n)$
 
 Fib2 has efficiency $O(n)$
@@ -273,7 +260,7 @@ This function has efficiency $O(n)$ as we operate from [1..n] with one operation
 
 Example:
 
-```
+```C
 int A[10] = {3, 1, 5, 4, 3, 2, 1, 5, 3, 2};
 int A_len = 10;
 // The longest descending run is {5,4,3,2,1}, beginning at A[2]
