@@ -211,11 +211,11 @@ fib2(int n) {
 
 ### Answer
 
-![Fib1Proof](/Fib1Proof.PNG)
+![Fib1Proof](https://github.com/PhalanxHead/Comp102/blob/master/Additional%20Material/Fib1Proof.PNG)
 
-In words: Each recursive call starts 2 new recursive calls. This creates 2 new problems for every n calls of fib1. Therefore we have $O(2^n)$
+In words: Each recursive call starts 2 new recursive calls. This creates 2 new problems for every n calls of fib1. Therefore we have O(2^n)
 
-Fib2 has efficiency $O(n)$
+Fib2 has efficiency O(n)
 
 We operate on the array [2..n], with special cases for n == 0 or 1. Ergo it's linear or O(n).
 
