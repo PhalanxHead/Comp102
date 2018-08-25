@@ -211,7 +211,7 @@ fib2(int n) {
 
 ### Answer
 
-![Fib1Proof](C:\Users\lhedt\OneDrive\Uni2018\Comp102\Additional Material\Fib1Proof.PNG)
+![Fib1Proof](/Fib1Proof.PNG)
 
 In words: Each recursive call starts 2 new recursive calls. This creates 2 new problems for every n calls of fib1. Therefore we have $O(2^n)$
 
