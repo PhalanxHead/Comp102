@@ -3,6 +3,8 @@
 Helpful Resource for working with time complexity from code: 
 https://codility.com/media/train/1-TimeComplexity.pdf
 
+Solutions:   github.com/phalanxhead/comp102
+
 ## Exercise 7.12 (Palindromes)
 
 Write a function `int is_palindrome(char*)` that returns True if its argument string is a palindrome, that is, it reads exactly the same forwards as it does backwards. It should return False if the string is not a palindrome.
